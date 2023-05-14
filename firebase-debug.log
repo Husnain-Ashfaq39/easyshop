@@ -1,0 +1,111 @@
+[debug] [2023-05-13T17:00:31.603Z] ----------------------------------------------------------------------
+[debug] [2023-05-13T17:00:31.606Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Husnain\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-05-13T17:00:31.606Z] CLI Version:   11.25.1
+[debug] [2023-05-13T17:00:31.607Z] Platform:      win32
+[debug] [2023-05-13T17:00:31.607Z] Node Version:  v18.14.0
+[debug] [2023-05-13T17:00:31.608Z] Time:          Sat May 13 2023 22:00:31 GMT+0500 (Pakistan Standard Time)
+[debug] [2023-05-13T17:00:31.609Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-13T17:00:31.721Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-13T17:00:31.722Z] > authorizing via signed-in user (husnain.ashfaq3939@gmail.com)
+[debug] [2023-05-13T17:00:31.722Z] [iam] checking project easyshop-project-6d31c for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-05-13T17:00:31.726Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/easyshop-project-6d31c:testIamPermissions [none]
+[debug] [2023-05-13T17:00:31.726Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/easyshop-project-6d31c:testIamPermissions x-goog-quota-user=projects/easyshop-project-6d31c
+[debug] [2023-05-13T17:00:31.727Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/easyshop-project-6d31c:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-05-13T17:00:33.423Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/easyshop-project-6d31c:testIamPermissions 200
+[debug] [2023-05-13T17:00:33.424Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/easyshop-project-6d31c:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-05-13T17:00:33.426Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/easyshop-project-6d31c [none]
+[debug] [2023-05-13T17:00:33.965Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/easyshop-project-6d31c 200
+[debug] [2023-05-13T17:00:33.965Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/easyshop-project-6d31c {"projectId":"easyshop-project-6d31c","projectNumber":"284283629653","displayName":"easyshop project","name":"projects/easyshop-project-6d31c","resources":{"hostingSite":"easyshop-project-6d31c"},"state":"ACTIVE","etag":"1_04d8919a-429e-4a4b-89ff-744dddd9ddf7"}
+[info] 
+[info] === Deploying to 'easyshop-project-6d31c'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2023-05-13T17:00:33.978Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/easyshop-project-6d31c/versions [none]
+[debug] [2023-05-13T17:00:33.979Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/easyshop-project-6d31c/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2023-05-13T17:00:36.134Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/easyshop-project-6d31c/versions 200
+[debug] [2023-05-13T17:00:36.135Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/easyshop-project-6d31c/versions {"name":"projects/284283629653/sites/easyshop-project-6d31c/versions/d590f93057ab053c","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2023-05-13T20:16:54.919Z] ----------------------------------------------------------------------
+[debug] [2023-05-13T20:16:54.922Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Husnain\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-05-13T20:16:54.923Z] CLI Version:   11.25.1
+[debug] [2023-05-13T20:16:54.923Z] Platform:      win32
+[debug] [2023-05-13T20:16:54.923Z] Node Version:  v18.14.0
+[debug] [2023-05-13T20:16:54.925Z] Time:          Sun May 14 2023 01:16:54 GMT+0500 (Pakistan Standard Time)
+[debug] [2023-05-13T20:16:54.925Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-13T20:16:55.033Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-13T20:16:55.034Z] > authorizing via signed-in user (husnain.ashfaq3939@gmail.com)
+[debug] [2023-05-13T20:16:55.034Z] [iam] checking project easyshop-project-6d31c for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-05-13T20:16:55.037Z] > refreshing access token with scopes: []
+[debug] [2023-05-13T20:16:55.040Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-05-13T20:16:55.041Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-13T20:16:55.557Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-05-13T20:16:55.557Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-13T20:16:55.569Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/easyshop-project-6d31c:testIamPermissions [none]
+[debug] [2023-05-13T20:16:55.570Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/easyshop-project-6d31c:testIamPermissions x-goog-quota-user=projects/easyshop-project-6d31c
+[debug] [2023-05-13T20:16:55.570Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/easyshop-project-6d31c:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-05-13T20:16:57.187Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/easyshop-project-6d31c:testIamPermissions 200
+[debug] [2023-05-13T20:16:57.187Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/easyshop-project-6d31c:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-05-13T20:16:57.189Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/easyshop-project-6d31c [none]
+[debug] [2023-05-13T20:16:57.729Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/easyshop-project-6d31c 200
+[debug] [2023-05-13T20:16:57.730Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/easyshop-project-6d31c {"projectId":"easyshop-project-6d31c","projectNumber":"284283629653","displayName":"easyshop project","name":"projects/easyshop-project-6d31c","resources":{"hostingSite":"easyshop-project-6d31c"},"state":"ACTIVE","etag":"1_04d8919a-429e-4a4b-89ff-744dddd9ddf7"}
+[info] 
+[info] === Deploying to 'easyshop-project-6d31c'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2023-05-13T20:16:57.741Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/easyshop-project-6d31c/versions [none]
+[debug] [2023-05-13T20:16:57.741Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/easyshop-project-6d31c/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2023-05-13T20:16:59.785Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/easyshop-project-6d31c/versions 200
+[debug] [2023-05-13T20:16:59.786Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/easyshop-project-6d31c/versions {"name":"projects/284283629653/sites/easyshop-project-6d31c/versions/02eac19941844c28","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[easyshop-project-6d31c]: beginning deploy... 
+[info] i  hosting[easyshop-project-6d31c]: found 15 files in build 
+[debug] [2023-05-13T20:16:59.812Z] [hosting] uploading with 200 concurrency
+[debug] [2023-05-13T20:16:59.834Z] [hosting] hash cache [YnVpbGQ] stored for 15 files
+[debug] [2023-05-13T20:16:59.835Z] [hosting][hash queue][FINAL] {"max":12,"min":0,"avg":0.8,"active":0,"complete":15,"success":15,"errored":0,"retried":0,"total":15,"elapsed":17}
+[debug] [2023-05-13T20:16:59.835Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/284283629653/sites/easyshop-project-6d31c/versions/02eac19941844c28:populateFiles [none]
+[debug] [2023-05-13T20:16:59.836Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/284283629653/sites/easyshop-project-6d31c/versions/02eac19941844c28:populateFiles {"files":{"/asset-manifest.json":"04283f7aaf10f72e36e7b4498509e8ac3a87fb47d1f693ffdd9641c98ad80503","/banner.png":"824d4c3d025af38600e7b01d4c33130ff5b49f738396d93874728cf2c10eb919","/favicon.ico":"eae62e993eb980ec8a25058c39d5a51feab118bd2100c4deebb2a9c158ec11f9","/logo192.png":"3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b","/logo512.png":"ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331","/manifest.json":"aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a","/robots.txt":"bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49","/static/css/main.994f18be.css":"e61d6f57226c80c2964b38411b6489bfe70ce6ab69c02be38f1dc414a4b8a6c7","/static/css/main.994f18be.css.map":"a88f4ebe19c07472ddf8c5c806cf06dad8762085f3f4f7dbf1272a975bf47001","/static/js/787.04d21cb6.chunk.js":"71cc9ccfc8a715975fdc759c0e10c11acf07094ea0ae8f5fb03cf038b50f2a79","/static/js/787.04d21cb6.chunk.js.map":"7b04fe536ea76585eb9617a3342daf44cfd77a075b44669c71acc85a0656882c","/static/js/main.b68d5a1b.js":"8d5f0ff112c0c32057f90a2832b9e7375b2b2e26974597bdb67eda8f30ba8a44","/static/js/main.b68d5a1b.js.LICENSE.txt":"22e8dd9534042d79594f703cbe551be1f7788e2b69c007942899cb778f58272a","/static/js/main.b68d5a1b.js.map":"1f9f0c578b6c68692f9690b2ee952b9c04c3542f60dcd0b96f1d679f97289d7b","/index.html":"7e6154cd359d22d056e049cf341fc4fe0c1b5e4d926b37066f7280b40d2ca703"}}
+[debug] [2023-05-13T20:17:01.563Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/284283629653/sites/easyshop-project-6d31c/versions/02eac19941844c28:populateFiles 200
+[debug] [2023-05-13T20:17:01.563Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/284283629653/sites/easyshop-project-6d31c/versions/02eac19941844c28:populateFiles {"uploadRequiredHashes":["7e6154cd359d22d056e049cf341fc4fe0c1b5e4d926b37066f7280b40d2ca703"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/easyshop-project-6d31c/versions/02eac19941844c28/files"}
+[debug] [2023-05-13T20:17:01.564Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/easyshop-project-6d31c/versions/02eac19941844c28/files/7e6154cd359d22d056e049cf341fc4fe0c1b5e4d926b37066f7280b40d2ca703 [none]
+[debug] [2023-05-13T20:17:01.564Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/easyshop-project-6d31c/versions/02eac19941844c28/files/7e6154cd359d22d056e049cf341fc4fe0c1b5e4d926b37066f7280b40d2ca703 [stream]
+[debug] [2023-05-13T20:17:01.566Z] [hosting][populate queue][FINAL] {"max":1732,"min":1732,"avg":1732,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1734}
+[debug] [2023-05-13T20:17:01.566Z] [hosting] uploads queued: 1
+[debug] [2023-05-13T20:17:02.815Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/easyshop-project-6d31c/versions/02eac19941844c28/files/7e6154cd359d22d056e049cf341fc4fe0c1b5e4d926b37066f7280b40d2ca703 200
+[debug] [2023-05-13T20:17:02.815Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/easyshop-project-6d31c/versions/02eac19941844c28/files/7e6154cd359d22d056e049cf341fc4fe0c1b5e4d926b37066f7280b40d2ca703 [stream]
+[debug] [2023-05-13T20:17:02.815Z] [hosting][upload queue][FINAL] {"max":1252,"min":1252,"avg":1252,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1252}
+[info] +  hosting[easyshop-project-6d31c]: file upload complete 
+[debug] [2023-05-13T20:17:02.817Z] [hosting] deploy completed after 3029ms
+[debug] [2023-05-13T20:17:02.821Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "easyshop-project-6d31c"
+    },
+    "version": "projects/284283629653/sites/easyshop-project-6d31c/versions/02eac19941844c28"
+  }
+]
+[info] i  hosting[easyshop-project-6d31c]: finalizing version... 
+[debug] [2023-05-13T20:17:02.825Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/easyshop-project-6d31c/versions/02eac19941844c28 updateMask=status%2Cconfig
+[debug] [2023-05-13T20:17:02.825Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/easyshop-project-6d31c/versions/02eac19941844c28 {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}}
+[debug] [2023-05-13T20:17:04.571Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/easyshop-project-6d31c/versions/02eac19941844c28 200
+[debug] [2023-05-13T20:17:04.571Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/easyshop-project-6d31c/versions/02eac19941844c28 {"name":"projects/284283629653/sites/easyshop-project-6d31c/versions/02eac19941844c28","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2023-05-13T20:16:59.525043Z","createUser":{"email":"husnain.ashfaq3939@gmail.com"},"finalizeTime":"2023-05-13T20:17:04.571954Z","finalizeUser":{"email":"husnain.ashfaq3939@gmail.com"}}
+[debug] [2023-05-13T20:17:04.572Z] [hosting] finalized version for easyshop-project-6d31c:[object Object]
+[info] +  hosting[easyshop-project-6d31c]: version finalized 
+[info] i  hosting[easyshop-project-6d31c]: releasing new version... 
+[debug] [2023-05-13T20:17:04.573Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/easyshop-project-6d31c/channels/live/releases versionName=projects%2F284283629653%2Fsites%2Feasyshop-project-6d31c%2Fversions%2F02eac19941844c28
+[debug] [2023-05-13T20:17:04.574Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/easyshop-project-6d31c/channels/live/releases {}
+[debug] [2023-05-13T20:17:06.274Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/easyshop-project-6d31c/channels/live/releases 200
+[debug] [2023-05-13T20:17:06.274Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/easyshop-project-6d31c/channels/live/releases {"name":"projects/284283629653/sites/easyshop-project-6d31c/channels/live/releases/1684009025695000","version":{"name":"projects/284283629653/sites/easyshop-project-6d31c/versions/02eac19941844c28","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2023-05-13T20:16:59.525043Z","createUser":{"email":"husnain.ashfaq3939@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AGNmyxYIDjg33upz3yXv6dlz5hOgxhU-wJYd2WDTEYJU=mo"},"finalizeTime":"2023-05-13T20:17:04.571954Z","finalizeUser":{"email":"husnain.ashfaq3939@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AGNmyxYIDjg33upz3yXv6dlz5hOgxhU-wJYd2WDTEYJU=mo"}},"type":"DEPLOY","releaseTime":"2023-05-13T20:17:05.695Z","releaseUser":{"email":"husnain.ashfaq3939@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AGNmyxYIDjg33upz3yXv6dlz5hOgxhU-wJYd2WDTEYJU=mo"}}
+[debug] [2023-05-13T20:17:06.274Z] [hosting] release: {"name":"projects/284283629653/sites/easyshop-project-6d31c/channels/live/releases/1684009025695000","version":{"name":"projects/284283629653/sites/easyshop-project-6d31c/versions/02eac19941844c28","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2023-05-13T20:16:59.525043Z","createUser":{"email":"husnain.ashfaq3939@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AGNmyxYIDjg33upz3yXv6dlz5hOgxhU-wJYd2WDTEYJU=mo"},"finalizeTime":"2023-05-13T20:17:04.571954Z","finalizeUser":{"email":"husnain.ashfaq3939@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AGNmyxYIDjg33upz3yXv6dlz5hOgxhU-wJYd2WDTEYJU=mo"}},"type":"DEPLOY","releaseTime":"2023-05-13T20:17:05.695Z","releaseUser":{"email":"husnain.ashfaq3939@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AGNmyxYIDjg33upz3yXv6dlz5hOgxhU-wJYd2WDTEYJU=mo"}}
+[info] +  hosting[easyshop-project-6d31c]: release complete 
