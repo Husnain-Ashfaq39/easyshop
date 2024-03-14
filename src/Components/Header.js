@@ -19,7 +19,7 @@ function Header() {
             {/* Logo */}
             <Link to='/'>
 
-                <img className='header_logo' alt='Logo' src='https://easyshop.direct/wp-content/uploads/2023/01/Logo-Easyshop_Bluegreen2240-2-2048x1288.png' />
+                <img className='header_logo' alt='Logo' src='logo.png' />
             </Link>
             {/* Search Bar */}
             {/*  */}
